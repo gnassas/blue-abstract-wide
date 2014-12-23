@@ -107,9 +107,10 @@
         </shape>
                
         <textarea name="title" from="base_textarea">
-            <area>15,10,600,36</area>
+	    <area>15,10,600,36</area>
             <font>title</font>
             <scroll direction="horizontal" rate="35"/>
+	    <template>%TITLE%% (|YEAR|)%</template>
         </textarea>
         <textarea name="subtitle" from="base_textarea">
             <area>15,40,600,36</area>
