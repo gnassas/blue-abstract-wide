@@ -59,7 +59,7 @@
                 <state name="active">
                     <area>0,0,850,36</area>
                     <textarea name="titlesubtitle" from="base_textarea">
-                        <area>8,0,512,36</area>
+                        <area>48,0,512,36</area>
                         <scroll direction="horizontal" />
                     </textarea>
                     <textarea name="00x00" from="base_textarea">
@@ -107,13 +107,7 @@
                     </statetype>
 
                     <statetype name="watched">
-                        <position>810,0</position>
-                        <state name="no">
-                            <imagetype name="watchedoff" from="base_icon_inactive">
-                                <area>3,3,30,30</area>
-                                <filename>images/icons/selected.png</filename>
-                            </imagetype>
-                        </state>
+                        <position>8,0</position>
                         <state name="yes">
                             <imagetype name="watched" from="base_icon_selected">
                                 <area>3,3,30,30</area>
