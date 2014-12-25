@@ -16,18 +16,25 @@
             </textarea>
         </textarea>
        
-        <group name="program_channellist_group" from="base_channellist_group">
+        <group name="program_details_group" from="base_program_details_group">
             <position>20,50</position>
+            <textarea name="title">
+		<area>15,10,600,36</area>
+	    </textarea>
+        </group>
+
+        <group name="program_channellist_group" from="base_channellist_group">
+            <position>20,235</position>
         </group>
 
         <shape name="guidegrid_background" from="base_background_shape">
-            <area>276,86,982,442</area>
+            <area>276,270,982,442</area>
             <line color="#000000" alpha="0" width="0" />
         </shape>
 
         <!-- this is the list with the tv program -->
         <guidegrid name="guidegrid">
-            <area>290,100,955,415</area>
+            <area>290,270,955,415</area>
             <layout>horizontal</layout>
             <channels>6</channels>
             <timeslots>6</timeslots>
@@ -54,10 +61,6 @@
             <arrow direction="right" image="images/icons/button_arrow_right.png"/>
             <font>text_small</font>
         </guidegrid>       
-
-        <group name="program_details_group" from="base_program_details_group">
-            <position>20,540</position>
-        </group>
 
     </window>
 
@@ -77,48 +80,9 @@
             </textarea>
         </textarea>
 
-        <group name="program_channellist_group" from="base_channellist_group">
-            <position>20,50</position>
-        </group>
-        
-        <shape name="guidegrid_background" from="base_background_shape">
-            <area>276,86,982,442</area>
-            <line color="#000000" alpha="0" width="0" />
-        </shape>
-        
-        <!-- this is the list with the tv program -->
-        <guidegrid name="guidegrid">
-            <area>290,100,955,415</area>
-            <layout>horizontal</layout>
-            <channels>6</channels>
-            <timeslots>6</timeslots>
-            <solidcolor>#003256</solidcolor>
-            <!-- selection box, this needs to be improved -->
-            <selector type="box" linecolor="#04b404" fillcolor="#0b610b"/>
-            <!--<showcategories>yes</showcategories>-->
-            <categoryalpha>100</categoryalpha>
-            <recordingcolor>#00AA00</recordingcolor>
-            <conflictingcolor>#FF6600</conflictingcolor>
-            <cutdown>yes</cutdown>
-            <multiline>yes</multiline>
-            <textoffset>6,6</textoffset>
-            <!-- the status of the recording. These are letters
-                that are shown in the affected tv program timeslot -->
-            <recordstatus type="SingleRecord"   image="images/icons/schedule_single.png"/>
-            <recordstatus type="TimeslotRecord" image="images/icons/schedule_timeslot.png"/>
-            <recordstatus type="ChannelRecord"  image="images/icons/schedule_channel.png"/>
-            <recordstatus type="AllRecord"      image="images/icons/schedule_all.png"/>
-            <recordstatus type="WeekslotRecord" image="images/icons/schedule_weekslot.png"/>
-            <recordstatus type="FindOneRecord"  image="images/icons/schedule_find_one.png"/>
-            <recordstatus type="OverrideRecord" image="images/icons/schedule_override.png"/>
-            <arrow direction="left" image="images/icons/button_arrow_left.png"/>
-            <arrow direction="right" image="images/icons/button_arrow_right.png"/>
-            <font>text_small</font>
-        </guidegrid>       
-                
         <!-- Shows some details to the selected program -->
         <group name="program_details_group" from="base_program_details_group">
-            <position>20,540</position>
+            <position>20,50</position>
             <textarea name="title">
                 <area>270,15,600,30</area>
             </textarea>
@@ -147,18 +111,58 @@
                 <template>%LONGREPEAT%%(|STARS|) %%DESCRIPTION%</template>
             </textarea>
         </group>
+
+        <group name="program_channellist_group" from="base_channellist_group">
+            <position>20,235</position>
+        </group>
+        
+        <shape name="guidegrid_background" from="base_background_shape">
+            <area>276,270,982,442</area>
+            <line color="#000000" alpha="0" width="0" />
+        </shape>
+        
+        <!-- this is the list with the tv program -->
+        <guidegrid name="guidegrid">
+            <area>290,270,955,415</area>
+            <layout>horizontal</layout>
+            <channels>6</channels>
+            <timeslots>6</timeslots>
+            <solidcolor>#003256</solidcolor>
+            <!-- selection box, this needs to be improved -->
+            <selector type="box" linecolor="#04b404" fillcolor="#0b610b"/>
+            <!--<showcategories>yes</showcategories>-->
+            <categoryalpha>100</categoryalpha>
+            <recordingcolor>#00AA00</recordingcolor>
+            <conflictingcolor>#FF6600</conflictingcolor>
+            <cutdown>yes</cutdown>
+            <multiline>yes</multiline>
+            <textoffset>6,6</textoffset>
+            <!-- the status of the recording. These are letters
+                that are shown in the affected tv program timeslot -->
+            <recordstatus type="SingleRecord"   image="images/icons/schedule_single.png"/>
+            <recordstatus type="TimeslotRecord" image="images/icons/schedule_timeslot.png"/>
+            <recordstatus type="ChannelRecord"  image="images/icons/schedule_channel.png"/>
+            <recordstatus type="AllRecord"      image="images/icons/schedule_all.png"/>
+            <recordstatus type="WeekslotRecord" image="images/icons/schedule_weekslot.png"/>
+            <recordstatus type="FindOneRecord"  image="images/icons/schedule_find_one.png"/>
+            <recordstatus type="OverrideRecord" image="images/icons/schedule_override.png"/>
+            <arrow direction="left" image="images/icons/button_arrow_left.png"/>
+            <arrow direction="right" image="images/icons/button_arrow_right.png"/>
+            <font>text_small</font>
+        </guidegrid>       
+                
         
         <!-- the livetv video itself -->
         <imagetype name="video">
-            <area>35,560,224,127</area>
+            <area>35,70,224,127</area>
         </imagetype>
          <!-- the shape around the livetv video -->
         <shape name="video_background_image" from="base_background_shape">
-            <area>35,560,224,127</area>
+            <area>35,70,224,127</area>
         </shape>
         <!-- the vertical separator -->
         <shape name="video_separator" from="base_background_shape">
-            <area>275,541,1,163</area>
+            <area>275,51,1,163</area>
         </shape>
         
     </window>
@@ -358,7 +362,10 @@
         </textarea>-->
         
         <group name="program_details_group" from="base_program_details_group">
-            <position>20,540</position>            
+            <position>20,540</position>
+	    <textarea name="title">
+		<area>15,10,600,36</area>
+	    </textarea>
         </group>
 
     </window>
