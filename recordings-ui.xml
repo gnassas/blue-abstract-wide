@@ -104,6 +104,12 @@
                                 <area>3,3,30,30</area>
                             </imagetype>
                         </state>
+                        <state name="userjobbing">
+                            <imagetype name="status" from="base_icon_selected">
+                                <filename>images/icons/userjobbed.png</filename>
+                                <area>3,3,30,30</area>
+                            </imagetype>
+                        </state>
                     </statetype>
 
                     <statetype name="watched">
