@@ -16,18 +16,25 @@
             </textarea>
         </textarea>
        
-        <group name="program_channellist_group" from="base_channellist_group">
+        <group name="program_details_group" from="base_program_details_group">
             <position>20,50</position>
+            <textarea name="title">
+		<area>15,10,600,36</area>
+	    </textarea>
+        </group>
+
+        <group name="program_channellist_group" from="base_channellist_group">
+            <position>20,235</position>
         </group>
 
         <shape name="guidegrid_background" from="base_background_shape">
-            <area>276,86,982,442</area>
+            <area>276,270,982,442</area>
             <line color="#000000" alpha="0" width="0" />
         </shape>
 
         <!-- this is the list with the tv program -->
         <guidegrid name="guidegrid">
-            <area>290,100,955,415</area>
+            <area>290,270,955,415</area>
             <layout>horizontal</layout>
             <channels>6</channels>
             <timeslots>6</timeslots>
@@ -55,10 +62,6 @@
             <font>text_small</font>
         </guidegrid>       
 
-        <group name="program_details_group" from="base_program_details_group">
-            <position>20,540</position>            
-        </group>
-
     </window>
 
 
@@ -77,18 +80,50 @@
             </textarea>
         </textarea>
 
-        <group name="program_channellist_group" from="base_channellist_group">
+        <!-- Shows some details to the selected program -->
+        <group name="program_details_group" from="base_program_details_group">
             <position>20,50</position>
+            <textarea name="title">
+                <area>270,15,600,30</area>
+            </textarea>
+            <textarea name="subtitle" from="base_textarea">
+                <area>270,50,600,30</area>
+            </textarea>
+
+            <textarea name="template" from="base_textarea">
+                <area>880,10,0,36</area>
+            </textarea>
+            <textarea name="channel" from="base_textarea">
+                <area>880,40,0,36</area>
+            </textarea>
+
+            <!-- The horizontal separator above the description -->
+            <shape name="description_separator" from="base_background_shape">
+                <area>255,77,984,1</area>
+            </shape>
+
+            <!-- show the plot of the recording -->
+            <textarea name="description" from="base_textarea">
+                <area>270,85,955,65</area>
+                <multiline>yes</multiline>
+                <cutdown>yes</cutdown>
+                <align>left,bottom</align>
+                <template>%LONGREPEAT%%(|STARS|) %%DESCRIPTION%</template>
+            </textarea>
+        </group>
+
+        <group name="program_channellist_group" from="base_channellist_group">
+            <position>20,235</position>
         </group>
         
         <shape name="guidegrid_background" from="base_background_shape">
-            <area>276,86,982,442</area>
+            <area>276,270,982,442</area>
             <line color="#000000" alpha="0" width="0" />
         </shape>
         
         <!-- this is the list with the tv program -->
         <guidegrid name="guidegrid">
-            <area>290,100,955,415</area>
+            <area>290,270,955,415</area>
             <layout>horizontal</layout>
             <channels>6</channels>
             <timeslots>6</timeslots>
@@ -116,51 +151,18 @@
             <font>text_small</font>
         </guidegrid>       
                 
-        <!-- Shows some details to the selected program -->
-        <group name="program_details_group" from="base_program_details_group">
-            <position>20,540</position>
-            <textarea name="title" from="base_textarea">
-                <area>270,15,600,30</area>
-                <font>title</font>
-                <scroll direction="horizontal" rate="35"/>
-            </textarea>
-            <textarea name="subtitle" from="base_textarea">
-                <area>270,50,600,30</area>
-            </textarea>
-
-            <textarea name="template" from="base_textarea">
-                <area>880,10,0,36</area>
-            </textarea>
-            <textarea name="channel" from="base_textarea">
-                <area>880,40,0,36</area>
-            </textarea>
-
-            <!-- The horizontal separator above the description -->
-            <shape name="description_separator" from="base_background_shape">
-                <area>255,77,984,1</area>
-            </shape>
-
-            <!-- show the plot of the recording -->
-            <textarea name="description" from="base_textarea">
-                <area>270,85,955,65</area>
-                <multiline>yes</multiline>
-                <cutdown>yes</cutdown>
-                <align>left,bottom</align>
-                <template>%LONGREPEAT%%(|STARS|) %%DESCRIPTION%</template>
-            </textarea>
-        </group>
         
         <!-- the livetv video itself -->
         <imagetype name="video">
-            <area>35,560,224,127</area>
+            <area>35,70,224,127</area>
         </imagetype>
          <!-- the shape around the livetv video -->
         <shape name="video_background_image" from="base_background_shape">
-            <area>35,560,224,127</area>
+            <area>35,70,224,127</area>
         </shape>
         <!-- the vertical separator -->
         <shape name="video_separator" from="base_background_shape">
-            <area>275,541,1,163</area>
+            <area>275,51,1,163</area>
         </shape>
         
     </window>
@@ -360,7 +362,10 @@
         </textarea>-->
         
         <group name="program_details_group" from="base_program_details_group">
-            <position>20,540</position>            
+            <position>20,540</position>
+	    <textarea name="title">
+		<area>15,10,600,36</area>
+	    </textarea>
         </group>
 
     </window>
