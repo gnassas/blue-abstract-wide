@@ -64,6 +64,13 @@
 
     <window name="standbymode">
 
+        <fontdef name="dimTitle" from="title">
+            <color>#dddddd</color>
+        </fontdef>
+        <fontdef name="dimText" from="text">
+            <color>#dddddd</color>
+        </fontdef>
+
         <!-- the background behind the images (black) -->
         <shape name="background_shape" from="base_background_shape_dark">
             <area>-2,-2,1284,724</area>
@@ -105,15 +112,25 @@
             </state>
         </statetype>
 
-	
-        <textarea name="currentrecordingheading">
+        <textarea name="norecording" depends="!currentrecording">
+          <area>350,10,726,323</area>
+          <imagetype name="header_background">
+            <!-- <area>0,-1,560,50</area> -->
+	    <!-- poohfishing is 253x180 area 513,100,766,180 -->
+            <!-- <filename>images/poohfishing.png</filename> -->
+	    <!-- poohfishing is 500x323 area 390,100,766,323 -->
+            <filename>images/clipbabyp22.gif</filename>
+          </imagetype>
+        </textarea>
+
+        <textarea name="currentrecordingheading" depends="currentrecording">
           <area>20,160,1240,30</area>
-          <font>title</font>
+          <font>dimTitle</font>
           <align>allcenter</align>
           <value>Recording Now</value>
         </textarea>
 
-	<shape name="block1">
+	<shape name="block1" depends="currentrecording">
           <area>20,200,1240,117</area>
           <type>roundbox</type>
           <fill color="#000000" alpha="130" />
@@ -121,14 +138,16 @@
           <cornerradius>10</cornerradius>
 	</shape>
 
+	<!-- 
         <textarea name="nothingrecording" depends="!currentrecording">
           <area>20,210,1240,115</area>
-          <font>text</font>
+          <font>dimText</font>
           <value>Nothing</value>
           <align>center</align>
         </textarea>
+	-->
 
-        <buttonlist name="currentrecording">
+        <buttonlist name="currentrecording" depends="currentrecording">
           <area>20,210,1240,115</area>
           <layout>vertical</layout>
           <spacing>4</spacing>
@@ -137,7 +156,7 @@
             <area>0,0,100%,26</area>
             <state name="active">
               <textarea name="title">
-                <font>text</font>
+                <font>dimText</font>
                 <align>allcenter</align>
                 <area>0,1,1240,24</area>
                 <template>%TITLESUBTITLE% on %CHANNAME% (%SHORTTIMEDATE%)</template>
@@ -150,7 +169,7 @@
 
 	<textarea name="nextrecordingheading">
           <area>20,350,1240,30</area>
-          <font>title</font>
+          <font>dimTitle</font>
           <align>allcenter</align>
           <value>Up Next</value>
         </textarea>
@@ -165,7 +184,7 @@
 
         <textarea name="nothingscheduled" depends="!nextrecording">
           <area>20,400,1240,180</area>
-          <font>text</font>
+          <font>dimText</font>
           <value>There are no scheduled recordings</value>
           <align>center</align>
         </textarea>
