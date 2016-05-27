@@ -70,7 +70,7 @@
             <multiline>yes</multiline>
             <scroll direction="vertical" rate="10" />
             <align>left,top</align>
-            <template>%"|SUBTITLE|" %%(|ORIGINALAIRDATE|) %%(|STARS|) %%DESCRIPTION%</template>
+            <template>%"|SUBTITLE|" %%(|ORIGINALAIRDATE|) %%(|STARS|) %%DESCRIPTION%\n%FILESIZE_STR%</template>
         </textarea>
 
         <shape name="recording_icon_separator" from="base_background_shape">
