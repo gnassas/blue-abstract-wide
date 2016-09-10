@@ -6,7 +6,7 @@
     <window name="keygrabpopup">
 
         <animation trigger="AboutToShow">
-            <section centre="left" duration="250">
+            <section duration="250">
                 <alpha start="0" end="255" easingcurve="Linear"/>
                 <zoom start="50" end="100" easingcurve="OutQuart"/>
                 <position start="-150,0" end="0,0"/>
@@ -14,7 +14,7 @@
         </animation>
 
         <animation trigger="AboutToHide">
-            <section centre="left" duration="250">
+            <section duration="250">
                 <alpha start="255" end="0" easingcurve="Linear"/>
                 <zoom start="100" end="50" easingcurve="InQuart"/>
                 <position start="0,0" end="-150,0"/>
@@ -31,7 +31,7 @@
             <area>335,280,610,80</area>
             <align>allcenter</align>
             <multiline>yes</multiline>
-            <scroll direction="vertical" rate="10"/>
+            <scroll direction="vertical"/>
         </textarea>
         <shape name="message_separator" from="base_background_shape">
             <area>421,365,438,1</area>
@@ -112,7 +112,7 @@
         </shape>
         <textarea name="description" from="base_textarea">
             <area>120,612,1040,90</area>
-            <scroll direction="vertical" rate="10"/>
+            <scroll direction="vertical"/>
             <align>allcenter</align>
             <multiline>yes</multiline>
             <value>This screen displays the status of various system components</value>

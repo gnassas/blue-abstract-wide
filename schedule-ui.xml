@@ -1435,7 +1435,7 @@
                     </textarea>
                     <textarea name="titlesubtitle" from="base_textarea">
                         <area>360,0,730,36</area>
-                        <scroll direction="horizontal" rate="35"/>
+                        <scroll direction="horizontal"/>
                     </textarea>
                     <textarea name="statusbefore" from="base_textarea">
                         <area>1120,0,30,36</area>
@@ -1586,7 +1586,7 @@
     <window name="phrasepopup">
 
         <animation trigger="AboutToShow">
-            <section centre="left" duration="250">
+            <section duration="250">
                 <alpha start="0" end="255" easingcurve="Linear"/>
                 <zoom start="50" end="100" easingcurve="OutQuart"/>
                 <position start="-150,0" end="0,0"/>
@@ -1594,7 +1594,7 @@
         </animation>
    
         <animation trigger="AboutToHide">
-            <section centre="left" duration="250">
+            <section duration="250">
                 <alpha start="255" end="0" easingcurve="Linear"/>
                 <zoom start="100" end="50" easingcurve="InQuart"/>
                 <position start="0,0" end="-150,0"/>
@@ -1668,7 +1668,7 @@
     <window name="powersearchpopup">
 
         <animation trigger="AboutToShow">
-            <section centre="left" duration="250">
+            <section duration="250">
                 <alpha start="0" end="255" easingcurve="Linear"/>
                 <zoom start="50" end="100" easingcurve="OutQuart"/>
                 <position start="-150,0" end="0,0"/>
@@ -1676,7 +1676,7 @@
         </animation>
    
         <animation trigger="AboutToHide">
-            <section centre="left" duration="250">
+            <section duration="250">
                 <alpha start="255" end="0" easingcurve="Linear"/>
                 <zoom start="100" end="50" easingcurve="InQuart"/>
                 <position start="0,0" end="-150,0"/>
@@ -1746,7 +1746,7 @@
     <window name="editpowersearchpopup">
 
         <animation trigger="AboutToShow">
-            <section centre="left" duration="250">
+            <section duration="250">
                 <alpha start="0" end="255" easingcurve="Linear"/>
                 <zoom start="50" end="100" easingcurve="OutQuart"/>
                 <position start="-150,0" end="0,0"/>
@@ -1754,7 +1754,7 @@
         </animation>
    
         <animation trigger="AboutToHide">
-            <section centre="left" duration="250">
+            <section duration="250">
                 <alpha start="255" end="0" easingcurve="Linear"/>
                 <zoom start="100" end="50" easingcurve="InQuart"/>
                 <position start="0,0" end="-150,0"/>
