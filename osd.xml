@@ -44,7 +44,7 @@
             <multiline>no</multiline>
             <cutdown>no</cutdown>
             <font>text</font>
-            <scroll direction="horizontal" rate="35"/>
+            <scroll direction="horizontal"/>
             <value>OSD Debug Information</value>
         </textarea>
 
@@ -204,7 +204,7 @@
             <multiline>no</multiline>
             <cutdown>no</cutdown>
             <font>text</font>
-            <scroll direction="horizontal" rate="35"/>
+            <scroll direction="horizontal"/>
         </textarea>
        
     </window>
@@ -235,7 +235,7 @@
             <multiline>no</multiline>
             <cutdown>no</cutdown>
             <font>text</font>
-            <scroll direction="horizontal" rate="35"/>
+            <scroll direction="horizontal"/>
             <value>OSD Input</value>
         </textarea>
 
@@ -277,7 +277,7 @@
             <align>left,vcenter</align>
             <multiline>no</multiline>
             <cutdown>no</cutdown>
-            <scroll direction="horizontal" rate="35"/>
+            <scroll direction="horizontal"/>
             <font>text</font>
         </textarea>
         
@@ -346,7 +346,7 @@
             <align>left,vcenter</align>
             <multiline>no</multiline>
             <cutdown>no</cutdown>
-            <scroll direction="horizontal" rate="35"/>
+            <scroll direction="horizontal"/>
             <font>title</font>
         </textarea>
 
@@ -372,7 +372,7 @@
             <align>allcenter</align>
             <multiline>yes</multiline>
             <cutdown>no</cutdown>
-            <scroll direction="vertical" rate="10"/>
+            <scroll direction="vertical"/>
             <font>text</font>
         </textarea>
 <!--
@@ -397,7 +397,7 @@
             <align>allcenter</align>
             <multiline>no</multiline>
             <cutdown>no</cutdown>
-            <scroll direction="horizontal" rate="35"/>
+            <scroll direction="horizontal"/>
             <font>text</font>
             <template>%1</template>
         </textarea>
@@ -413,7 +413,7 @@
             <area>279,550,870,125</area>
             <multiline>yes</multiline>
             <cutdown>no</cutdown>
-            <scroll direction="vertical" rate="10"/>
+            <scroll direction="vertical"/>
             <align>left,top</align>
             <font>text</font>
             <template>%"|SUBTITLE|" %%LONGREPEAT%%(|STARS|) %%DESCRIPTION%</template>
@@ -783,7 +783,7 @@
             <align>left,vcenter</align>
             <multiline>no</multiline>
             <cutdown>no</cutdown>
-            <scroll direction="horizontal" rate="35"/>
+            <scroll direction="horizontal"/>
             <font>title</font>
         </textarea>
 
@@ -809,7 +809,7 @@
             <align>allcenter</align>
             <multiline>yes</multiline>
             <cutdown>no</cutdown>
-            <scroll direction="vertical" rate="10"/>
+            <scroll direction="vertical"/>
             <font>text</font>
         </textarea>
 <!--
@@ -834,7 +834,7 @@
             <align>allcenter</align>
             <multiline>no</multiline>
             <cutdown>no</cutdown>
-            <scroll direction="horizontal" rate="35"/>
+            <scroll direction="horizontal"/>
             <font>text</font>
             <template>%1</template>
         </textarea>
@@ -850,7 +850,7 @@
             <area>279,550,870,125</area>
             <multiline>yes</multiline>
             <cutdown>no</cutdown>
-            <scroll direction="vertical" rate="10"/>
+            <scroll direction="vertical"/>
             <align>left,top</align>
             <font>text</font>
             <template>%"|SUBTITLE|" %%LONGREPEAT%%(|STARS|) %%DESCRIPTION%</template>
@@ -905,7 +905,7 @@
             <multiline>no</multiline>
             <cutdown>no</cutdown>
             <font>text</font>
-            <scroll direction="horizontal" rate="35"/>
+            <scroll direction="horizontal"/>
             <value>Channel Editor</value>
         </textarea>
 
@@ -940,7 +940,7 @@
             <multiline>no</multiline>
             <cutdown>no</cutdown>
             <font>text</font>
-            <scroll direction="horizontal" rate="35"/>
+            <scroll direction="horizontal"/>
             <value>Callsign</value>
         </textarea>
         <textarea name="channum_label" from="callsign_label">
@@ -1105,7 +1105,7 @@
             <align>left,vcenter</align>
             <multiline>no</multiline>
             <cutdown>no</cutdown>
-            <scroll direction="horizontal" rate="35"/>
+            <scroll direction="horizontal"/>
             <font>text</font>
         </textarea>
 
@@ -1212,7 +1212,7 @@
             <multiline>yes</multiline>
             <cutdown>no</cutdown>
             <font>text</font>
-            <scroll direction="vertical" rate="10"/>
+            <scroll direction="vertical"/>
         </textarea>
         
         <!-- this needs to be here to prevent errors in the logs. -->
@@ -1258,7 +1258,7 @@
                         <multiline>no</multiline>
                         <cutdown>no</cutdown>
                         <align>left,vcenter</align>
-                        <scroll direction="horizontal" rate="35"/>
+                        <scroll direction="horizontal"/>
                     </textarea>
                     
                     <!-- indicates the button contains a submenu -->
@@ -1378,7 +1378,7 @@
             <multiline>yes</multiline>
             <cutdown>no</cutdown>
             <font>text</font>
-            <scroll direction="vertical" rate="10"/>
+            <scroll direction="vertical"/>
         </textarea>
         
         <!-- this needs to be here to prevent errors in the logs. -->
@@ -1424,7 +1424,7 @@
                         <multiline>no</multiline>
                         <cutdown>no</cutdown>
                         <align>left,vcenter</align>
-                        <scroll direction="horizontal" rate="35"/>
+                        <scroll direction="horizontal"/>
                     </textarea>
                     
                     <!-- indicates the button contains a submenu -->
